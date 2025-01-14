@@ -49,7 +49,7 @@ describe("User Credentials Test Suite", () => {
     expect(getByMock).toHaveBeenCalledWith("id", "12345");
   });
 
-  it.skip("should take the name and return the user details", async () => {
+  it("should take the name and return the user details", async () => {
     getByMock.mockResolvedValueOnce(newObj);
     const actualUser = await sut.getUserByUserName("Hari");
     expect(actualUser).toBe(newObj);
