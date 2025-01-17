@@ -1,0 +1,28 @@
+POST http://localhost:3000/user/createUser/
+Content-Type: application/json
+
+{
+    "name": "Harikrishnan",
+    "email": "harikrishnanv.rko@gmail.com",
+    "password": "firstPassword"
+}
+###
+
+POST http://localhost:3000/user/createUser/
+Content-Type: application/json
+
+{
+    "name": "Hari",
+    "email": "hari@gmail.com",
+    "password": "firstPassword"
+}
+###
+
+POST http://localhost:3000/user/validateUser/
+Content-Type: application/json
+
+{
+    "email": "harikrishnanv.rko@gmail.com",
+    "password": "firstPassword"
+}
+###

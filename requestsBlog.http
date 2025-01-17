@@ -1,0 +1,33 @@
+POST http://localhost:3000/read/blogs/
+Content-Type: application/json
+
+{
+    "title": "New Blog",
+    "username": "Hari",
+    "description": "My First blog",
+    "content": "This is my first blog. I am now testing the post blog functionality of the app"
+}
+###
+
+GET http://localhost:3000/read/blogs/
+Content-Type: application/json
+###
+
+GET http://localhost:3000/read/blogs/1
+Content-Type: application/json
+###
+
+PUT http://localhost:3000/read/blogs/1
+Content-Type: application/json
+
+{
+    "title": "Second Blog",
+    "username": "Hari",
+    "description": "My Second blog",
+    "content": "This is my Second blog. I am now testing the edit functionality of the app"
+}
+###
+
+DELETE http://localhost:3000/read/blogs/1
+Content-Type: application/json
+###
