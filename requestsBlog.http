@@ -1,4 +1,7 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTczNzM3ODQwM30.s51IneoDooDRPD5SwKF_E__VbfCKlyITLTEPks4CCks
+
 POST http://localhost:3000/read/blogs/
+authorization: {{token}}
 Content-Type: application/json
 
 {
@@ -10,14 +13,17 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/read/blogs/
+authorization: {{token}}
 Content-Type: application/json
 ###
 
-GET http://localhost:3000/read/blogs/1
+GET http://localhost:3000/read/blogs/2
+authorization: {{token}}
 Content-Type: application/json
 ###
 
 PUT http://localhost:3000/read/blogs/1
+authorization: {{token}}
 Content-Type: application/json
 
 {
@@ -29,5 +35,6 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/read/blogs/1
+authorization: {{token}}
 Content-Type: application/json
 ###
